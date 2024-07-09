@@ -1,0 +1,25 @@
+@media screen and (max-width:375px){
+    main{
+        background-color: white ;
+        section{
+            width: 80%;
+            height: 90vh;
+            #box_main{         
+                align-self: flex-start;
+                flex-direction: column;
+                width: 100%;
+                #box_input{
+                    order: 2;
+                    width: 100%;    
+                    margin-top: 30px;     
+                   
+                }
+                #box_photo{ 
+                    width: 100%;
+                    height: 30vh;
+                    order: 1;
+                }
+            }
+        }
+    }
+}
