@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> send email with Sass</title>
-    <link href="./stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <title> newsletter</title>
+    <link href="./stylesheets/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -19,29 +19,33 @@
                 <div id="box_input">
                     <h1>Stay updated!</h1>
                     <p>Join 60.000+ product managers receveing monthly updated on:</p>
-                    <div id="firstCheck">
+                    <div id="box_check"></div>
+                    <div class="check">
                         <img src="./assets/images/icon-success.svg" alt="" class="check-image">
+                        <p>Product discovery and building what matters</p>
+
 
                     </div>
 
-                    <div id="secondCheck">
+                    <div class="check">
                         <img src="./assets/images/icon-success.svg" alt="" class="check-image">
+                        <p>Measuring to ensure updates are a success</p>
 
                     </div>
 
-                    <div id="thirdCheck">
+                    <div class="check">
                         <img src="./assets/images/icon-success.svg" alt="" class="check-image">
+                        <p>And much more!</p>                     
 
                     </div>
 
-                    <p>Email address</p>
-
-                    <div id="fieldSubmit">
-
-                        <input type="text">
-                        <button>fieldSubmit</button>
-    
-                    </div>
+                    <form action="">
+                        <label for="email">Email address</label>
+                    
+                        <input type="text" id="email" placeholder="email@company.com">
+                        <button type="submit">Subscribe to monthly newsletter</button>
+                    
+                    </form>
 
                 </div>
 
@@ -50,11 +54,6 @@
                     <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
 
                 </div>
-
-                <div id="check-list">
-
-                </div>
-
                
 
             </div>
@@ -62,6 +61,8 @@
         </section>
 
     </main>
+
+    <script src="./javascripts/index.js"></script>
 
 </body>
 
