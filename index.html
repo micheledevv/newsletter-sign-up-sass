@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> newsletter</title>
-    <link href="./stylesheets/style.css" rel="stylesheet"/>
+    <link href="./stylesheets/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -34,16 +34,21 @@
 
                     <div class="check">
                         <img src="./assets/images/icon-success.svg" alt="" class="check-image">
-                        <p>And much more!</p>                     
+                        <p>And much more!</p>
 
                     </div>
 
-                    <form action="">
-                        <label for="email">Email address</label>
-                    
+                    <form id="form" action="">
+                        <div id="status_email">
+                            <label for="email">Email address</label>
+                            <p></p>
+
+                        </div>
+
+
                         <input type="text" id="email" placeholder="email@company.com">
                         <button type="submit">Subscribe to monthly newsletter</button>
-                    
+
                     </form>
 
                 </div>
@@ -53,7 +58,7 @@
                     <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
 
                 </div>
-               
+
 
             </div>
 
@@ -61,7 +66,17 @@
 
     </main>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "8MwpHkxQkI1iLptsP",
+            });
+        })();
+    </script>
     <script src="./javascripts/index.js"></script>
+
 
 </body>
 

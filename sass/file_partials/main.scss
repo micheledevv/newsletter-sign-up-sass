@@ -95,12 +95,23 @@ main {
                     display: flex;
                     flex-direction: column;
                     margin-left: 10px;
+                    #status_email{
+                        
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        label {
+                            text-align: left;
+                            margin-top: 15px;
+                            font-family: "font_custom";
+                        }
+                        p{
+                            font-family: "font_custom";
+                        }
 
-                    label {
-                        text-align: left;
-                        margin-top: 15px;
-                        font-family: "font_custom";
                     }
+
+                   
 
                     input {
                         padding: 12px;

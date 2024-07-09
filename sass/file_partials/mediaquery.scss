@@ -1,4 +1,5 @@
-@media screen and (max-width:375px){
+//mediaquery smartphone
+@media screen and (max-width:717px){
     main{
         background-color: white ;
         section{
@@ -12,12 +13,28 @@
                     order: 2;
                     width: 100%;    
                     margin-top: 30px;     
+                    h1{
+                        font-size: 1.5em;
+                    }
                    
                 }
                 #box_photo{ 
-                    width: 100%;
+                    width: 80%;
                     height: 30vh;
                     order: 1;
+                }
+            }
+        }
+    }
+}
+//mediaquery tablet
+@media screen and (min-width:718px) and (max-width:1023px){
+    main{
+        section{
+            #box_main{
+                #box_input{
+                    height: 60vh;
+                    width: 50%;
                 }
             }
         }
