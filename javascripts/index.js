@@ -1,3 +1,9 @@
+(function () {
+  emailjs.init({
+      publicKey: "8MwpHkxQkI1iLptsP",
+  });
+})();
+
 document.getElementById("form").addEventListener("submit", function (e) {
   const regForm =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
