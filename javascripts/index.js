@@ -27,6 +27,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
     let objMail = {
       email: inputElement.value,
     };
+    
 
     emailjs
       .send("service_tz44hoo","template_1fpv8qa", objMail)
